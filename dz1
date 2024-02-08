@@ -1,0 +1,39 @@
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Привет, меня зовут Салтыков Антон");
+
+        System.out.println("Введите количество эл массива:");
+        int n = scanner.nextInt();
+        int mas []= new int[n];
+        double sum = 0;
+        for(int m = 0;m<mas.length;m++)
+        {
+            System.out.print("Введите значение:");
+            int a = scanner.nextInt();
+            sum =sum + a;
+        }
+
+        System.out.println("Сумма="+sum);
+        System.out.println("Среднее арифметическое="+sum/n);
+
+        List<Integer> numbers = new ArrayList<>();
+
+        for (int i = 1; i <= 10; i++) {
+            numbers.add(i);
+        }
+        
+
+        int summ = 0;
+        for (int num : numbers) {
+            summ += num;
+        }
+
+        double average = (double) summ / numbers.size();
+
+        System.out.println("List: " + numbers);
+        System.out.println("Сумма чисел: " + summ);
+        System.out.println("Среднее арифметическое: " + average);
+    }
+
+}
